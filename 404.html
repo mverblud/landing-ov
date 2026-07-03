@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página no encontrada | OV Suspension</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="img/perfil.png" />
+  <meta name="theme-color" content="#FFBA00" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* Estilos específicos del 404 */
+    .error-page {
+      min-height: 100svh;
+      background: var(--color-black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-8);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Número grande de fondo */
+    .error-page::before {
+      content: '404';
+      position: absolute;
+      font-family: var(--font-heading);
+      font-size: clamp(12rem, 30vw, 22rem);
+      font-weight: var(--weight-black);
+      color: rgba(255,186,0,.04);
+      pointer-events: none;
+      user-select: none;
+      letter-spacing: -0.05em;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .error-page__inner {
+      position: relative;
+      z-index: 1;
+      max-width: 540px;
+    }
+
+    .error-page img {
+      height: 48px;
+      width: auto;
+      margin: 0 auto var(--space-10);
+    }
+
+    .error-page__code {
+      font-family: var(--font-heading);
+      font-size: var(--text-sm);
+      font-weight: var(--weight-semibold);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      display: block;
+      margin-bottom: var(--space-4);
+    }
+
+    .error-page h1 {
+      color: var(--color-white);
+      font-size: var(--text-3xl);
+      margin-bottom: var(--space-4);
+    }
+
+    .error-page p {
+      color: rgba(255,255,255,.60);
+      font-size: var(--text-lg);
+      line-height: var(--leading-relaxed);
+      max-width: 40ch;
+      margin: 0 auto var(--space-10);
+    }
+
+    .error-page__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <main class="error-page" role="main" aria-label="Página no encontrada">
+    <div class="error-page__inner">
+
+      <a href="index.html" aria-label="OV Suspension – volver al inicio">
+        <img src="img/logo.png" alt="OV Suspension" width="180" height="36" />
+      </a>
+
+      <span class="error-page__code">Error 404</span>
+      <h1>Página no encontrada</h1>
+      <p>
+        La página que buscás no existe o fue movida.
+        Volvé al inicio y encontrá lo que necesitás.
+      </p>
+
+      <div class="error-page__actions">
+        <a href="index.html" class="btn btn--primary btn--lg">
+          Volver al inicio
+        </a>
+        <a
+          href="https://wa.me/5493517687201"
+          class="btn btn--outline btn--lg"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Consultar por WhatsApp"
+        >
+          Consultar por WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
