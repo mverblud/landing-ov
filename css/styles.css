@@ -758,6 +758,7 @@ strong { font-weight: var(--weight-semibold); }
   opacity: 0;
   transform: translateY(12px);
   animation: fadeUp .7s .7s forwards;
+  text-align: center;
 }
 
 /* Scroll indicator */
@@ -1551,7 +1552,9 @@ strong { font-weight: var(--weight-semibold); }
   /* Navbar mobile */
   .navbar__links {
     position: fixed;
-    inset: 72px 0 0 0;
+    inset: 72px 0 auto 0;
+    height: calc(100vh - 72px);
+    height: calc(100dvh - 72px); /* barras del browser en mobile */
     background: rgba(0,0,0,.97);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
